@@ -1,0 +1,56 @@
+{
+  "synthetic": true,
+  "lots": [
+    {
+      "id": "lot-a",
+      "farmer": "farmer-a",
+      "origin": "area-a",
+      "estimatedKg": 120
+    },
+    {
+      "id": "lot-b",
+      "farmer": "farmer-b",
+      "origin": "area-a",
+      "estimatedKg": 90
+    }
+  ],
+  "grades": [
+    "A",
+    "B",
+    "processing"
+  ],
+  "buyers": [
+    {
+      "id": "buyer-a",
+      "allowedGrades": [
+        "A"
+      ],
+      "allowUpgrade": false,
+      "allowSplit": true
+    },
+    {
+      "id": "buyer-b",
+      "allowedGrades": [
+        "B"
+      ],
+      "allowUpgrade": true,
+      "allowSplit": false
+    }
+  ],
+  "prices": [
+    {
+      "grade": "A",
+      "minorPerKg": 1200
+    },
+    {
+      "grade": "B",
+      "minorPerKg": 800
+    }
+  ],
+  "scales": [
+    {
+      "id": "scale-a",
+      "precisionKg": "0.01"
+    }
+  ]
+}

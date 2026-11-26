@@ -1,0 +1,95 @@
+{
+  "synthetic": true,
+  "records": [
+    {
+      "recordId": "synthetic-01",
+      "kind": "gradeResult",
+      "payload": {
+        "lot": "lot-a",
+        "gradesKg": {
+          "A": "70.00",
+          "B": "40.00",
+          "processing": "10.00"
+        }
+      }
+    },
+    {
+      "recordId": "synthetic-02",
+      "kind": "order",
+      "payload": {
+        "id": "order-a",
+        "buyer": "buyer-a",
+        "grade": "A",
+        "kg": "60.00",
+        "deadline": "2026-11-30"
+      }
+    },
+    {
+      "recordId": "synthetic-03",
+      "kind": "order",
+      "payload": {
+        "id": "order-b",
+        "buyer": "buyer-b",
+        "grade": "B",
+        "kg": "30.00",
+        "deadline": "2026-11-30"
+      }
+    },
+    {
+      "recordId": "synthetic-04",
+      "kind": "boxPacked",
+      "payload": {
+        "boxId": "box-1",
+        "sources": [
+          {
+            "lot": "lot-a",
+            "grade": "A",
+            "kg": "20.00"
+          }
+        ]
+      }
+    },
+    {
+      "recordId": "synthetic-05",
+      "kind": "carrierAccepted",
+      "payload": {
+        "requestId": "waybill-1",
+        "waybillId": "waybill-a",
+        "boxIds": [
+          "box-1"
+        ]
+      }
+    },
+    {
+      "recordId": "synthetic-06",
+      "kind": "qualityCorrection",
+      "payload": {
+        "lot": "lot-a",
+        "revision": 2,
+        "affectedKg": "20.00",
+        "fromGrade": "A",
+        "toGrade": "B"
+      }
+    },
+    {
+      "recordId": "synthetic-07",
+      "kind": "buyerReceipt",
+      "payload": {
+        "waybillId": "waybill-a",
+        "boxId": "box-1",
+        "receivedKg": "15.00",
+        "rejectedKg": "5.00",
+        "reason": "外观异议"
+      }
+    },
+    {
+      "recordId": "synthetic-08",
+      "kind": "warehouseReturn",
+      "payload": {
+        "boxId": "box-1",
+        "actualKg": "4.80",
+        "condition": "待复验"
+      }
+    }
+  ]
+}

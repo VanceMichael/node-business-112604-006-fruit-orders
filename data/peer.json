@@ -1,0 +1,14 @@
+{
+  "name": "冷链承运接收端",
+  "operations": [
+    "waybill",
+    "cancel",
+    "claim"
+  ],
+  "identity_fields": [
+    "requestId",
+    "waybillId",
+    "boxIds"
+  ],
+  "facts": "waybill 返回 accepted 或 handedOver 以及 occurredAt；签收事件逐箱返回 receivedKg、rejectedKg、reason。claim 针对原 waybillId、boxId，不能代表仓库已收回实物。重量以十进制字符串传输，金额以分表示。"
+}
