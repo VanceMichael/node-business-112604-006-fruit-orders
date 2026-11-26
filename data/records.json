@@ -14,6 +14,18 @@
       }
     },
     {
+      "recordId": "synthetic-extra-grade",
+      "kind": "gradeResult",
+      "payload": {
+        "lot": "lot-b",
+        "gradesKg": {
+          "A": "30.00",
+          "B": "50.00",
+          "processing": "10.00"
+        }
+      }
+    },
+    {
       "recordId": "synthetic-02",
       "kind": "order",
       "payload": {
@@ -44,7 +56,12 @@
           {
             "lot": "lot-a",
             "grade": "A",
-            "kg": "20.00"
+            "kg": "10.00"
+          },
+          {
+            "lot": "lot-b",
+            "grade": "A",
+            "kg": "10.00"
           }
         ]
       }
